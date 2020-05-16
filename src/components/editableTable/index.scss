@@ -1,0 +1,87 @@
+
+
+@mixin btn-common {
+	width: 110px;
+	height: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.editable-container {
+	padding: 50px;
+	background-color: #f6f6f6;
+	margin:auto;
+	text-align: center;
+	width: 70%;
+	height: 100vh;
+	.add-btn-box {
+		display: flex;
+		justify-content: flex-end;
+		margin:20px 0;
+		.btn-add {
+			@include btn-common;
+			background-color: green;
+			height: 35px;
+		}
+	}
+	
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	table {
+		width: 100%;
+		margin: auto;		
+		tr {
+			height: 36px;
+			td,th {
+				min-width: 280px;
+				&:last-child {
+					max-width: 150px;
+					min-width: 150px;
+				}
+				
+				.btn-save {
+					@include btn-common;
+					background-color: green;
+				}
+				.edit-box {
+					display: flex;
+					justify-content:center;
+					align-items: center;
+					position: relative;
+					.btn-edit {
+						@include btn-common;
+						background-color: blue;
+					}
+					.btn-del {
+						cursor: pointer;
+						position: absolute;
+						right: -35px;
+					}
+				}
+				
+				input {
+					width: 100%;
+					border: 0;
+					outline: none;
+					height: 36px;
+					text-align: center;
+				}
+				select {
+					width: 100%;
+					border: 0;
+					outline: none;
+					height: 36px;
+					text-align: center;
+					text-align-last: center;
+					font-size: 14px;
+					background-color: #fff;
+					option {
+						font-size: 18px;
+					}
+				}
+			}
+			
+		}		
+	}
+}
