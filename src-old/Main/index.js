@@ -9,8 +9,6 @@ class Main extends Component {
 				name:'DoubleVar',
 				type : 'Double',
 				value : '12.34',
-				Integer : 10,
-				Delta : 2,
 				isEdit : false
 			}]
 		}

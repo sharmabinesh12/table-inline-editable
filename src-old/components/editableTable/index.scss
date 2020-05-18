@@ -11,7 +11,7 @@
 	background-color: #f6f6f6;
 	margin:auto;
 	text-align: center;
-	width: 90%;
+	width: 70%;
 	height: 100vh;
 	overflow-y: auto;
 	.add-btn-box {
@@ -35,7 +35,7 @@
 		tr {
 			height: 36px;
 			td,th {
-				min-width: 250px;
+				min-width: 280px;
 				&:last-child {
 					max-width: 150px;
 					min-width: 150px;
@@ -59,14 +59,6 @@
 						position: absolute;
 						right: -35px;
 					}
-				}
-				.btn-up {
-					@include btn-common;
-					color:#000;
-				}
-				.btn-down {
-					@include btn-common;
-					color:#000
 				}
 				
 				input {
